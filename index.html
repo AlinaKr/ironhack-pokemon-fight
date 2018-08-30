@@ -13,26 +13,28 @@
   <!-- Own style -->
   <link rel="stylesheet" href="style.css">
 
-  <title>Hello, world!</title>
+  <title>Pokemon Fight!</title>
 </head>
 
 <body>
 
+  
+
   <div class="container">
-    <h1 class="text-center my-5">Pokemon Fight!</h1>
+    <div class="text-center my-5"><img class="img-fluid logo" src="/images/126ca0a1d3587b38150b04237ed632e7.png" alt=""></div>
 
 
     <div class="row">
       <div class="col player-1">
-        <h2>Player 1</h2>
+        <h2 class="text-center">Player 1</h2>
 
         <form>
           <div class="form-row">
-            <div class="col-6">
+            <div class="col-sm-6 py-1">
               <input type="text" class="form-control" placeholder="Pokemon Id or Name">
             </div>
-            <div class="col-6">
-              <button class="btn btn-danger btn-block">Select</button>
+            <div class="col-sm-6 py-1">
+              <button class="btn btn-primary btn-block">Select</button>
             </div>
           </div>
         </form>
@@ -40,15 +42,15 @@
         <div class="pokemon-info text-center"></div>
       </div>
       <div class="col player-2">
-        <h2>Player 2</h2>
+        <h2 class="text-center">Player 2</h2>
 
         <form>
           <div class="form-row">
-            <div class="col-6">
+            <div class="col-sm-6 py-1">
               <input type="text" class="form-control" placeholder="Pokemon Id or Name">
             </div>
-            <div class="col-6">
-              <button class="btn btn-danger btn-block">Select</button>
+            <div class="col-sm-6 py-1">
+              <button class="btn btn-primary btn-block">Select</button>
             </div>
           </div>
         </form>
@@ -58,7 +60,7 @@
     </div>
 
 
-    <button class="btn btn-block btn-danger mt-5 fight-button">Fight</button>
+    <button class="btn btn-block btn-primary mt-5 fight-button">Fight</button>
 
     <h3 class="winner text-center mt-3"></h3>
   </div>

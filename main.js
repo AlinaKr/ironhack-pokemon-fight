@@ -13,6 +13,10 @@ $('.player-2 button').click(e => {
 })
 
 function callPokeApi(val, playerId) {
+  $(`.player-${playerId} .pokemon-info`).html(`
+      <h3 class="my-5">Loading...</h3>
+    `)
+
   axios.get('https://pokeapi.co/api/v2/pokemon/'+val)
   .then(response => {
     console.log(response.data);
@@ -38,7 +42,7 @@ $('.fight-button').click(() => {
 
   if (baseExperience1 > 0 && baseExperience2 > 0) {
     let winnerId, loserId;
-    if (Math.random() < baseExperience1 / (baseExperience1 + baseExperience2)) {
+    if (Math.random() < baseExperience1*baseExperience1 / (baseExperience1*baseExperience1 + baseExperience2*baseExperience2)) {
       winnerId = 1
       loserId = 2
     }

@@ -1,3 +1,25 @@
+.logo {
+  max-width: 500px;
+}
+
 .poke-picture {
   height: 150;
+}
+
+.btn-primary {
+  background-color: #356abd;
+  border: none;
+  color: #ffcd00;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #2b5497;
+  border: none;
+  color: #ffcd00;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  color: #356abd;
 }
