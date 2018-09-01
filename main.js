@@ -1,6 +1,8 @@
-function capitalze(str) {
-  return str[0].toUpperCase() + str.substr(1).toLowerCase()
-}
+$('body').click(() => {
+  if (isMobile()) {
+    requestFullscreen()
+  }
+})
 
 let pokemonsOnField = new Array(2)
 let nbOfPokeballs = [6,6]
