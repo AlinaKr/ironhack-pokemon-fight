@@ -3,7 +3,7 @@
 }
 
 .poke-picture {
-  height: 150;
+  height: 120px;
 }
 
 .btn-primary {
@@ -22,4 +22,23 @@
 
 h1, h2, h3, h4 {
   color: #356abd;
+}
+
+.player-1 img {
+  transform: scaleX(-1);
+}
+
+
+.progress {
+  border: 2px solid #356abd;
+  background-color: #ffcd00;
+}
+
+.progress-bar {
+  background-color: #356abd;
+}
+
+.score {
+  height: 30px;
+  text-align: center;
 }
